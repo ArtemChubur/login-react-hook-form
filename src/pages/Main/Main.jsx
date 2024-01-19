@@ -34,6 +34,13 @@ function Main() {
         //     setUser(userSessionStorage)
         // }
         checkInfo()
+
+        let themeHistory = localStorage.getItem('theme')
+        if (themeHistory === 'true') {
+            setLightTheme(true)
+        } else if (themeHistory === 'false') {
+            setLightTheme(false)
+        }
     }, [])
 
     return (
@@ -65,7 +72,7 @@ function Main() {
             <div
                 onClick={() => {
                     setLightTheme(!lightTheme)
-                    console.log(!lightTheme)
+                    localStorage.setItem('theme', `${!lightTheme}`)
                 }}
                 className={'theme'}
             />
