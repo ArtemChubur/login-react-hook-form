@@ -1,0 +1,22 @@
+:root{
+    --darkTheme: #093545;
+    --lightTheme: #E5E5E5;
+    --btnColor: #20DF7F;
+    --inputColor: rgba(164, 164, 164, 0.23);
+}
+
+.Page {
+    /*margin-top: -1.6%;*/
+    width: 100%;
+    height: 100vh;
+    background: var(--darkTheme) url("./assets/Vectors.png") no-repeat 0 82.3vh;
+    background-size: 100% auto;
+    font-weight: 212;
+    transition: all 0.5s;
+}
+
+.PageLight{
+    background: var(--lightTheme) url("./assets/Vector2.png") no-repeat 0 82.3vh;
+    background-size: 100% auto;
+    transition: all 0.5s;
+}

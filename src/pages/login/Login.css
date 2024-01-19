@@ -1,0 +1,124 @@
+/*:root{*/
+/*    --darkTheme: #093545;*/
+/*    --lightTheme: #E5E5E5;*/
+/*    --btnColor: #20DF7F;*/
+/*    --inputColor: rgba(164, 164, 164, 0.23);*/
+/*}*/
+
+.textDark{
+    color: white;
+    transition: all 0.5s;
+}
+
+.textLight{
+    color: var(--darkTheme);
+    transition: all 0.5s;
+}
+
+.input{
+    display: block;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    background-color: var(--inputColor);
+    margin: 20px auto;
+    color: var(--lightTheme);
+    transition: all 0.5s;
+}
+
+.inputLight{
+    background-color: var(--darkTheme);
+    transition: all 0.5s;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.LoginPage {
+    margin-top: -1.6%;
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*background: var(--darkTheme) url("../../assets/Vectors.png") no-repeat 0 82.3vh;*/
+    /*background-size: 100% auto;*/
+    /*font-weight: 212;*/
+    /*transition: all 0.5s;*/
+}
+
+/*.LoginPageLight{*/
+/*    background: var(--lightTheme) url("../../assets/Vector2.png") no-repeat 0 82.3vh;*/
+/*    background-size: 100% auto;*/
+/*    transition: all 0.5s;*/
+/*}*/
+
+h1{
+    text-align: center;
+    padding-top: 80px;
+}
+
+p{
+    text-align: center;
+}
+
+.error{
+    color: red;
+}
+
+.forgotPass{
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    margin: 0 auto 20px auto;
+    /*margin-bottom: 20px;*/
+}
+
+.forgotPass a{
+    color: var(--btnColor);
+;
+}
+
+.button{
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--btnColor);
+}
+
+.form{
+    width: 300px;
+}
+
+.checkbox{
+
+}
+
+.theme{
+    width: 50px;
+    height: 50px;
+    background: url("../../assets/DarkMode.png");
+    background-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 85vh;
+    left: 7vh;
+    border-right: 1000px;
+}
+
+.theme:active{
+    width: 55px;
+    height: 55px;
+    background-size: 55px;
+}
+
+.alert{
+    position: absolute;
+    left: -45vh;
+    transition: all 1s;
+}
+
+.alertTrue{
+    left: 0;
+    transition: all 1s;
+}

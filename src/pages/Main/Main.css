@@ -1,0 +1,48 @@
+/*body{*/
+/*    !*margin-top: -1.6%;*!*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    background: var(--darkTheme) url("../../assets/Vectors.png") no-repeat 0 82.3vh;*/
+/*    background-size: 100% auto;*/
+/*    font-weight: 212;*/
+/*    transition: all 0.5s;*/
+/*    overflow: hidden;*/
+/*}*/
+
+.MainPageLight{
+    background: var(--lightTheme) url("../../assets/Vector2.png") no-repeat 0 82.3vh;
+    background-size: 100% auto;
+    transition: all 0.5s;
+}
+
+.profile{
+    /*width: 20%;*/
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--lightTheme);
+    /*padding: 100px 0 0 0;*/
+    /*margin: 10px 0 0 0;*/
+}
+
+.ff{
+    padding: 150px 35%;
+}
+
+.title p {
+    text-align: left;
+    color: var(--darkTheme);
+}
+
+.info p{
+    text-align: left;
+    color: var(--darkTheme);
+    /*margin: 0 auto;*/
+}
+
+.titleLight p{
+    color: var(--lightTheme);
+}
+
+.profileDark {
+    background-color: var(--darkTheme);
+}
