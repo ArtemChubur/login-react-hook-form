@@ -28,11 +28,6 @@ function Main() {
     }
 
     useEffect(() => {
-        // if (userLocalStorage) {
-        //     setUser(userLocalStorage)
-        // } else if (userSessionStorage) {
-        //     setUser(userSessionStorage)
-        // }
         checkInfo()
 
         let themeHistory = localStorage.getItem('theme')
@@ -66,6 +61,15 @@ function Main() {
                             <p>{user.language}</p>
                         </div>
                     </div>
+                    <button
+                        className={`input ${lightTheme ? 'inputLight' : null}`}
+                        onClick={() => {
+                            localStorage.removeItem('user')
+                            sessionStorage.removeItem('user')
+                            goLoginPage()
+                        }
+                        }
+                    >Выйти</button>
                 </div>
 
             }
