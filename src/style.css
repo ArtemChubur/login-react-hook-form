@@ -13,6 +13,7 @@
     background-size: 100% auto;
     font-weight: 212;
     transition: all 0.5s;
+    /*min-height: 100vh;*/
 }
 
 .PageLight{

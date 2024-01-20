@@ -11,8 +11,6 @@ function Main() {
     const [user, setUser] = useState({})
     const [lightTheme, setLightTheme] = useState(false)
 
-
-
     function checkInfo() {
         if (userSessionStorage === null && userLocalStorage === null) {
             goLoginPage()

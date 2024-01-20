@@ -22,7 +22,7 @@ function Login() {
         handleSubmit,
         formState: {errors},
         reset
-    } = useForm()
+    } = useForm({mode: "onChange"})
 
     const onSubmit = async (data) => {
         try {
